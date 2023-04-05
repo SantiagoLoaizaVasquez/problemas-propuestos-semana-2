@@ -1,0 +1,25 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Problema_Resuelto_2
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Ingrese el monto prestado");
+            double C= double.Parse(Console.ReadLine());
+            Console.WriteLine("Ingrese el interes anual");
+            double Interes= double.Parse(Console.ReadLine());
+            Console.WriteLine("Ingrese el tiempo de prestamo en años");
+            double tiempo= double.Parse(Console.ReadLine());
+
+            double Cf = C *(1 + (Interes / 100) * tiempo);
+            Console.WriteLine("La capital final seria de : " + Cf);
+            Console.ReadLine();
+        }
+    }
+}
